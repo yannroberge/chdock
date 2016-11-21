@@ -1,2 +1,2 @@
 # chdock
-## I have barely started to make this, it is far from usable as of now
+## This program is a work-in progress in its early stage. It isnot easily usable as of now.

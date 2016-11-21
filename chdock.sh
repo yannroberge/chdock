@@ -1,13 +1,14 @@
 #!/bin/bash
 
-chemin="$1"
+# Options available:
+# 	-v -> verbose
+#	-l -> list
+#	-a -> scope in apps
+#	-f -> scope in files
+#	-e -> execute [position in Dock]
+#	-r -> remove [position in Dock]
+#	-s -> search (returns position in dock, or "File(s) not found in Dock")
 
-# Pause nécéssaire pour que le système ait le temps
-# d'enlever le fichier de la semaine dernière du dock
-sleep 5
-
-# Ajoute chemin au Dock
-defaults write com.apple.dock persistent-others -array-add "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>$chemin</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>"
-#sleep 3
-
-killall Dock
+set -v verbose
+./lsdock.sh
+set +v verbose
