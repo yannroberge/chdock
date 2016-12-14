@@ -5,6 +5,7 @@
 #	-l -> list (Functional :) )
 #	-a -> scope in apps
 #	-f -> scope in files
+#	-i -> specify an index in the dock
 #	-e -> execute [position in Dock]
 #	-r -> remove [position in Dock]
 #	-s -> search (returns position in dock, or "File(s) not found in Dock")
