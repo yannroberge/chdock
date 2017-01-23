@@ -1,5 +1,7 @@
 # chdock
-## Executing chdock.sh or (lsdock.sh) will list your dock's files
+
+chdock is a command-line tool for editing docks under OSX.
+Its objective is to allow the use the dock change in shell scripts and programs
 
 How to install/use:
 
@@ -14,7 +16,7 @@ How to install/use:
 
 or
 
--Execute lsdock.sh:
+-List dock items
 <code>./lsdock.sh</code>
 ...lists the entire dock's contents
 <code>./lsdock.sh -a</code>
@@ -22,4 +24,11 @@ or
 <code>./lsdock.sh -f</code>
 ...lists the files placed in the dock right of the vertical separation bar
 
-chdock is a work-in-progress.
+or
+
+-Remove dock items
+<code>./rmdock.sh [-a|f] [-i] [-n] path|position...</code>
+...removes the file at <code>path</code>, or whichever file is at <code>position</code> in the dock 
+
+A script for adding dock elements is currently being worked on
+
